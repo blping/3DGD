@@ -1,14 +1,26 @@
 fileFormatVersion: 2
 guid: 90d758ce348bcf94ea7956e0bafab155
+AssetOrigin:
+  serializedVersion: 1
+  productId: 148410
+  packageName: RPG Poly Pack - Lite
+  packageVersion: 1.0.1
+  assetPath: Assets/RPGPP_LT/Models/Props/rpgpp_lt_log_wood_02a.fbx
+  uploadId: 766582
 ModelImporter:
-  serializedVersion: 22200
+  serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rpgpp_lt_mat_a
+    second: {fileID: 2100000, guid: c82b8094a3d6118498d8b391fc4e1586, type: 2}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -56,6 +68,9 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
     meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
@@ -105,10 +120,3 @@ ModelImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 148410
-  packageName: RPG Poly Pack - Lite
-  packageVersion: 1.0.1
-  assetPath: Assets/RPGPP_LT/Models/Props/rpgpp_lt_log_wood_02a.fbx
-  uploadId: 766582

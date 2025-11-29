@@ -31,10 +31,12 @@ public class CameraSwitcher : MonoBehaviour
             if (isThirdPerson)
             {
                 SetFirstPersonView();
+                Debug.Log("Hello, camera first person switch update works!");
             }
             else
             {
                 SetThirdPersonView();
+                Debug.Log("Hello, camera third person switch update works!");
             }
         }
     }
@@ -46,9 +48,11 @@ public class CameraSwitcher : MonoBehaviour
         firstPersonCam.Priority = lowPriority;
         isThirdPerson = true;
 
+        Debug.Log("Hello, camera third person view works!");
         // 2. NEW: Update PlayerMovement Script
         if (playerMovement != null)
         {
+            Debug.Log("Hello, camera third person view  a works!");
             playerMovement.isThirdPerson = true;
         }
 
@@ -70,7 +74,7 @@ public class CameraSwitcher : MonoBehaviour
 
     private void SetFirstPersonView()
     {
-
+        Debug.Log("Hello, camera first person view works!");
         // 1. Swap VCam Priorities (Original Logic)
         firstPersonCam.Priority = highPriority;
         thirdPersonCam.Priority = lowPriority;
@@ -79,6 +83,7 @@ public class CameraSwitcher : MonoBehaviour
         // 2. NEW: Update PlayerMovement Script
         if (playerMovement != null)
         {
+            Debug.Log("Hello, camera first person view a works!");
             playerMovement.isThirdPerson = false;
         }
 

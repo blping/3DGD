@@ -13,6 +13,7 @@ public class CameraFollowTarget : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Hello, follow target update works!");
         float mouseX = Input.GetAxis("Mouse X") * lookSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * lookSensitivity * Time.deltaTime;
 
@@ -23,6 +24,7 @@ public class CameraFollowTarget : MonoBehaviour
 
         if (playerMovement.isThirdPerson)
         {
+            Debug.Log("Hello, third person works!");
             // THIRD-PERSON: Horizontal input orbits the camera by rotating the Player's parent.
             // The PlayerMovement script handles the Player's orientation when moving.
             transform.parent.Rotate(Vector3.up * mouseX);
@@ -30,6 +32,7 @@ public class CameraFollowTarget : MonoBehaviour
         
         else // isThirdPerson == false (FIRST-PERSON VIEW)
         {
+            Debug.Log("Hello, first person works!");
             // Use an even higher multiplier here, as it's often slower
             mouseX = Input.GetAxis("Mouse X") * 800f * Time.deltaTime; 
             transform.rotation *= Quaternion.Euler(0, mouseX, 0);

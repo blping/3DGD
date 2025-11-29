@@ -79,8 +79,14 @@ public class PlayerMovement : MonoBehaviour
             if (isThirdPerson)
             {
                 // ... (Your existing Third-Person movement-based rotation code) ...
+
+                Debug.Log("Hello, Player Movement isThirdPerson works!");
+
+                /*
+
                 if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0)
                 {
+                    Debug.Log("Hello, Player Movement isThirdPerson a works!");
                     Quaternion targetRotation = Quaternion.Euler(0, cameraTarget.eulerAngles.y, 0);
                     transform.rotation = Quaternion.Slerp(
                         transform.rotation, 
@@ -88,15 +94,19 @@ public class PlayerMovement : MonoBehaviour
                         Time.deltaTime * 50f
                     );
                 }
+                */
+                
             }
             else // isThirdPerson == false (First-Person View)
             {
                 // **FIRST-PERSON LOOK:** Player body MUST rotate with the mouse!
-                
+                /*
+                Debug.Log("Hello, Player Movement isFirstPerson a works!");
+
                 // Get horizontal mouse input and rotate the player body directly.
                 float mouseX = Input.GetAxis("Mouse X") * 400f * Time.deltaTime; // Use a high speed
                 transform.rotation *= Quaternion.Euler(0, mouseX, 0);
-
+                */
                 // Vertical camera rotation is handled by the CameraFollowTarget script on the Neck.
             }
             // If NOT isThirdPerson (i.e., First-Person view)

@@ -124,6 +124,33 @@ Light:
   m_CorrespondingSourceObject: {fileID: 9013828631202010546, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
   m_PrefabInstance: {fileID: 116222526084870395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &935542996 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8059885382989106416, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+  m_PrefabInstance: {fileID: 116222526084870395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &935542998
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935542996}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 5108f89797f410840a297e2ff7d9dfd6, type: 3}
+  m_Controller: {fileID: 9100000, guid: d6a87d21ea9fef24ea0389a613ec5532, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &116222526084870395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,9 +159,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 83230840925177916, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.4259999
+      objectReference: {fileID: 0}
+    - target: {fileID: 83230840925177916, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.55460256
+      objectReference: {fileID: 0}
+    - target: {fileID: 83230840925177916, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.435116
+      objectReference: {fileID: 0}
+    - target: {fileID: 83230840925177916, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5671104
+      objectReference: {fileID: 0}
     - target: {fileID: 902441749402973633, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
       propertyPath: far clip plane
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996722855585517309, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000042154173
+      objectReference: {fileID: 0}
+    - target: {fileID: 2996722855585517309, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00510552
       objectReference: {fileID: 0}
     - target: {fileID: 3654283133905260839, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -239,7 +290,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8059885382989106416, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 935542998}
   m_SourcePrefab: {fileID: 100100000, guid: 8b7ed218bb3f1134e9f721eb08bb735a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
